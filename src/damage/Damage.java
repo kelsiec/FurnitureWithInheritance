@@ -1,4 +1,4 @@
-package materials.damage;
+package damage;
 
 public class Damage {
     private boolean damaged = false;
