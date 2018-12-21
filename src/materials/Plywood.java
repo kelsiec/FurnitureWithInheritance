@@ -1,6 +1,6 @@
 package materials;
 
-import materials.damage.DamageType;
+import damage.DamageType;
 
 import java.util.Arrays;
 import java.util.HashSet;

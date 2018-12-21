@@ -1,7 +1,7 @@
 package furniture;
 
 import materials.Material;
-import materials.damage.DamageType;
+import damage.DamageType;
 
 public abstract class Furniture {
     private String name;

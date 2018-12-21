@@ -3,7 +3,7 @@ import furniture.Furniture;
 import furniture.Table;
 import materials.Glass;
 import materials.Plywood;
-import materials.damage.DamageType;
+import damage.DamageType;
 
 public class Destruction {
     public static void main(String[] args) {

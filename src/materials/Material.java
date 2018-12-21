@@ -1,7 +1,7 @@
 package materials;
 
-import materials.damage.Damage;
-import materials.damage.DamageType;
+import damage.Damage;
+import damage.DamageType;
 
 import java.util.HashMap;
 import java.util.HashSet;
