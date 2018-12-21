@@ -1,5 +1,6 @@
 package materials;
 
+<<<<<<< HEAD
 import damage.Damage;
 import damage.DamageType;
 
@@ -17,6 +18,23 @@ public abstract class Material {
 
         damages = new HashMap<>();
         for (DamageType damageType : damageTypes) {
+=======
+import materials.damage.Damage;
+import materials.damage.DamageType;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Material {
+    private final String name;
+    private Map<DamageType, Damage> damages;
+
+    public Material(MaterialType materialType) {
+        this.name = materialType.getName();
+
+        damages = new HashMap<>();
+        for (DamageType damageType : materialType.getDamageTypes()) {
+>>>>>>> 4fd5fba... initial commit
             damages.put(damageType, new Damage());
         }
     }

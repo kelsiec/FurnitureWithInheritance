@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import furniture.Chair;
 import furniture.Furniture;
 import furniture.Table;
@@ -8,6 +9,16 @@ import damage.DamageType;
 public class Destruction {
     public static void main(String[] args) {
         Furniture table = new Chair(new Plywood());
+=======
+import furniture.Furniture;
+import furniture.FurnitureType;
+import materials.MaterialType;
+import materials.damage.DamageType;
+
+public class Destruction {
+    public static void main(String[] args) {
+        Furniture table = new Furniture(FurnitureType.CHAIR, MaterialType.PLYWOOD);
+>>>>>>> 4fd5fba... initial commit
         table.printStatus();
 
         System.out.println("Thwacking the chair...");
@@ -20,7 +31,11 @@ public class Destruction {
 
         System.out.println();
 
+<<<<<<< HEAD
         Furniture table2 = new Table(new Glass());
+=======
+        Furniture table2 = new Furniture(FurnitureType.TABLE, MaterialType.GLASS);
+>>>>>>> 4fd5fba... initial commit
         table2.printStatus();
 
         System.out.println("Thwacking the table...");
