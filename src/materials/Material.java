@@ -11,7 +11,7 @@ public abstract class Material {
     private final String name;
     private Map<DamageType, Damage> damages;
 
-    Material(String name, HashSet<DamageType> damageTypes) {
+    protected Material(String name, HashSet<DamageType> damageTypes) {
         this.name = name;
 
         damages = new HashMap<>();

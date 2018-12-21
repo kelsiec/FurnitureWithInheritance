@@ -7,7 +7,7 @@ public abstract class Furniture {
     private String name;
     private Material material;
 
-    Furniture(String name, Material material) {
+    protected Furniture(String name, Material material) {
         this.name = name;
         this.material = material;
     }
