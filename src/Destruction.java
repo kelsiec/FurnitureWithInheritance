@@ -1,11 +1,13 @@
+import furniture.Chair;
 import furniture.Furniture;
-import furniture.FurnitureType;
-import materials.MaterialType;
+import furniture.Table;
+import materials.Glass;
+import materials.Plywood;
 import materials.damage.DamageType;
 
 public class Destruction {
     public static void main(String[] args) {
-        Furniture table = new Furniture(FurnitureType.CHAIR, MaterialType.PLYWOOD);
+        Furniture table = new Chair(new Plywood());
         table.printStatus();
 
         System.out.println("Thwacking the chair...");
@@ -18,7 +20,7 @@ public class Destruction {
 
         System.out.println();
 
-        Furniture table2 = new Furniture(FurnitureType.TABLE, MaterialType.GLASS);
+        Furniture table2 = new Table(new Glass());
         table2.printStatus();
 
         System.out.println("Thwacking the table...");

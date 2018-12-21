@@ -4,17 +4,18 @@ import materials.damage.Damage;
 import materials.damage.DamageType;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 
-public class Material {
+public abstract class Material {
     private final String name;
     private Map<DamageType, Damage> damages;
 
-    public Material(MaterialType materialType) {
-        this.name = materialType.getName();
+    Material(String name, HashSet<DamageType> damageTypes) {
+        this.name = name;
 
         damages = new HashMap<>();
-        for (DamageType damageType : materialType.getDamageTypes()) {
+        for (DamageType damageType : damageTypes) {
             damages.put(damageType, new Damage());
         }
     }
