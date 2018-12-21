@@ -11,6 +11,7 @@ public abstract class Material {
     private final String name;
     private Map<DamageType, Damage> damages;
 
+    @SuppressWarnings("WeakerAccess")
     protected Material(String name, HashSet<DamageType> damageTypes) {
         this.name = name;
 

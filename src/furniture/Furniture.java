@@ -7,6 +7,7 @@ public abstract class Furniture {
     private String name;
     private Material material;
 
+    @SuppressWarnings("WeakerAccess")
     protected Furniture(String name, Material material) {
         this.name = name;
         this.material = material;
