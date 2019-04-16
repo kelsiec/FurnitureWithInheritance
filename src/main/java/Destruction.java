@@ -1,32 +1,27 @@
-import furniture.Furniture;
-import furniture.FurnitureType;
-import materials.MaterialType;
-import damage.DamageType;
-
 public class Destruction {
     public static void main(String[] args) {
-        Furniture chair = new Furniture(FurnitureType.CHAIR, MaterialType.PLYWOOD);
+        Furniture chair = new Furniture("chair","plywood");
         chair.printStatus();
 
         System.out.println("Thwacking the chair...");
-        chair.damage(DamageType.BLUNT);
+        chair.hit();
         chair.printStatus();
 
         System.out.println("Setting fire to the chair...");
-        chair.damage(DamageType.FIRE);
+        chair.setFire();
         chair.printStatus();
 
         System.out.println();
 
-        Furniture table = new Furniture(FurnitureType.TABLE, MaterialType.GLASS);
+        Furniture table = new Furniture("table", "glass");
         table.printStatus();
 
         System.out.println("Thwacking the table...");
-        table.damage(DamageType.BLUNT);
+        table.hit();
         table.printStatus();
 
         System.out.println("Setting fire to the table...");
-        table.damage(DamageType.FIRE);
+        table.setFire();
         table.printStatus();
     }
 }
