@@ -6,7 +6,7 @@ import material.Plywood;
 
 public class Destruction {
     public static void main(String[] args) {
-        Furniture chair = new Chair(new Plywood());
+        Furniture chair = new Chair("plywood");
         chair.printStatus();
 
         System.out.println("Thwacking the chair...");
@@ -19,7 +19,7 @@ public class Destruction {
 
         System.out.println();
 
-        Furniture table = new Table(new Glass());
+        Furniture table = new Table("glass");
         table.printStatus();
 
         System.out.println("Thwacking the table...");

@@ -1,14 +1,15 @@
 package furniture;
 
 import material.Material;
+import material.MaterialFactory;
 
 public abstract class Furniture {
     private final String furnitureType;
     private Material material;
 
-    public Furniture(String furnitureType, Material materialType) {
+    public Furniture(String furnitureType, String materialType) {
         this.furnitureType = furnitureType;
-        this.material = materialType;
+        this.material = MaterialFactory.getMaterialType(materialType);
     }
 
     public void hit() {

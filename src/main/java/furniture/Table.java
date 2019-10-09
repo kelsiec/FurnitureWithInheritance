@@ -3,7 +3,7 @@ package furniture;
 import material.Material;
 
 public class Table extends Furniture {
-    public Table(Material material) {
+    public Table(String material) {
         super("table", material);
     }
 }
